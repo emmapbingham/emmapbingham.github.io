@@ -239,21 +239,6 @@ strong { font-weight: 500; }
   padding: 0 1.5rem;
 }
 
-.writing-section + .writing-section {
-  margin-top: 3rem;
-}
-
-.writing-section__label {
-  font-family: var(--sans);
-  font-size: 0.72rem;
-  font-weight: 400;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-light);
-  margin-bottom: 0;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid var(--rule);
-}
 
 .writing-header p {
   color: var(--ink-mid);
