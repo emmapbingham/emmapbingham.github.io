@@ -657,12 +657,19 @@ strong { font-weight: 500; }
 @media (max-width: 600px) {
   .site-nav {
     flex-direction: column;
-    gap: 1.2rem;
+    align-items: flex-start;
+    gap: 0.75rem;
     padding-top: 1.5rem;
   }
 
   .site-nav__links {
-    gap: 1.2rem;
+    gap: 1.25rem;
+    flex-wrap: nowrap;
+  }
+
+  .site-nav__links a {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
   }
 
   .writing-list__item {
