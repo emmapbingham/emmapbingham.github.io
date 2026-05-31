@@ -668,8 +668,8 @@ strong { font-weight: 500; }
   }
 
   .site-nav__links a {
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
   }
 
   .writing-list__item {
@@ -687,5 +687,14 @@ strong { font-weight: 500; }
 
   .cv-entry__sub {
     grid-column: 1;
+  }
+
+  .contact-list__item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .contact-list__label {
+    margin-top: 0.25rem;
   }
 }
