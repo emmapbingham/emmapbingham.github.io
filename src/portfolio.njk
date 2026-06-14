@@ -1,0 +1,345 @@
+---
+layout: base
+title: Portfolio
+description: Portfolio by Emma Bingham
+noindex: true
+---
+
+<div class="portfolio-header">
+  <h1>Portfolio</h1>
+  <p>Selected writing and projects. See more projects on my <a href="/projects/">Projects</a> page, or 
+  see more of my articles for The Wire China <a href="https://www.thewirechina.com/team_member/emma-bingham/">on their site</a>. 
+  (If paywalled, PDFs of my articles are available <a href="/contact/">on request</a>.)</p>
+</div>
+
+<div class="portfolio-entries">
+
+  {# ─────────────────────────────────────────────────────────────────
+     ENTRY TEMPLATE — copy this block and fill in your own content.
+
+     For a single image:
+       Remove all <button> elements and the second <img> tags.
+       Keep only one <img class="pf-gallery__img active"> in the list.
+
+     For multiple images:
+       Each <img class="pf-gallery__img"> after the first needs no "active".
+       Add a <button class="pf-gallery__btn pf-gallery__btn--prev">&#8592;</button>
+       and   <button class="pf-gallery__btn pf-gallery__btn--next">&#8594;</button>
+       inside .pf-gallery__stage, which the JS below wires up automatically.
+  ──────────────────────────────────────────────────────────────── #}
+
+  <article class="pf-entry">
+    <header class="pf-entry__header">
+      <h2 class="pf-entry__title">Recipe App (under development)</h2>
+      <span class="pf-entry__date">2026</span>
+    </header>
+
+    <div class="pf-entry__body">
+      <div class="pf-gallery">
+        <div class="pf-gallery__stage">
+          <img class="pf-gallery__img active" src="/img/recipe-app-cookbook.png" alt="Recipe app cookbook screenshot">
+          <img class="pf-gallery__img" src="/img/recipe-app-import.png" alt="Recipe app import screenshot">
+          <img class="pf-gallery__img" src="/img/recipe-app-timeline.png" alt="Recipe app timeline screenshot">
+          <img class="pf-gallery__img" src="/img/recipe-app-navigator.png" alt="Recipe app navigator screenshot">
+          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
+          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
+        </div>
+        <div class="pf-gallery__dots" aria-hidden="true"></div>
+      </div>
+
+      <div class="pf-entry__text">
+        <p>Inspired by <a href="https://diyhpl.us/~bryan/papers2/CompCook.html">RxOL</a> 
+        and <a href="https://6xq.net/pesto/">Pesto</a>, I am collaborating with
+        <a href="https://ijc8.me/">Ian Clester</a> to build a recipe app 
+        that uses the structure of recipes to allow a richer set of features and
+        programmatic recipe analysis than in typical recipe sites or cookbooks.</p>
+        <p>The app, built using Claude Code, has features such as a cookbook-like recipe display 
+        with collapsible steps and ingredient highlighting, a scheduler to propose a schedule for 
+        cooking one or more recipes, and a turn-by-turn cooking navigator that replans in real time.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="pf-entry">
+    <header class="pf-entry__header">
+      <h2 class="pf-entry__title">Rosenlife.org — archival site about Robert Rosen</h2>
+      <span class="pf-entry__date">2024</span>
+    </header>
+
+    <div class="pf-entry__body">
+      <div class="pf-gallery">
+        <div class="pf-gallery__stage">
+          <img class="pf-gallery__img active" src="/img/rosen-site-home.png" alt="Screenshot of rosenlife.org homepage">
+          <img class="pf-gallery__img" src="/img/rosen-site-collection.png" alt="Screenshot of rosenlife.org collections page">
+          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
+          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
+        </div>
+        <div class="pf-gallery__dots" aria-hidden="true"></div>
+      </div>
+
+      <div class="pf-entry__text">
+        <p>I helped my friend and colleague 
+        <a href="https://www.pedromaz.com/">Pedro Márquez-Zacarías</a>
+        curate an online repository of the work and correspondence of Robert Rosen, 
+        theoretical biologist active from the 1950s-1990s, with the collaboration and blessing of Judith Rosen, 
+        who maintains her father's archives.</p>
+        <p>There is growing interest in Rosen's work globally, and Pedro and I 
+        were privileged to visit his archives in Rochester, NY, and help surface some of his 
+        unpublished and out-of-print notes and books.</p>
+        <p><a href="https://rosenlife.org/" target="_blank" rel="noopener">Visit the site →</a></p>
+      </div>
+    </div>
+  </article>
+
+  <article class="pf-entry">
+    <header class="pf-entry__header">
+      <h2 class="pf-entry__title">Project | A nonadaptive explanation for complex multicellularity in eukaryotes</h2>
+      <span class="pf-entry__date">2024</span>
+    </header>
+
+    <div class="pf-entry__body">
+      <div class="pf-gallery">
+        <div class="pf-gallery__stage">
+          <img class="pf-gallery__img active" src="/img/nonadaptive.jpg" alt="Chart showing simulation results">
+        </div>
+        <div class="pf-gallery__dots" aria-hidden="true"></div>
+      </div>
+
+      <div class="pf-entry__text">
+        <p>In collaboration with one of my PhD advisors, Will Ratcliff, I wrote
+        a simulation to demonstrate a hypothesis about why complex multicellularity
+        has arisen multiple times in eukaryotes but not in prokaryotes.</p> 
+        <p>This project
+        was an experiment in quickly prototyping a simulation that could
+        demonstrate an idea and determine whether it's worth further research. We
+        published the results as a 'brief report' paper in PNAS.</p>
+        <p><a href="https://doi.org/10.1073/pnas.2319840121" target="_blank" rel="noopener">Read the paper →</a></p>
+      </div>
+    </div>
+  </article>
+
+  <article class="pf-entry">
+    <header class="pf-entry__header">
+      <h2 class="pf-entry__title">News List app</h2>
+      <span class="pf-entry__date">2020</span>
+    </header>
+
+    <div class="pf-entry__body">
+      <div class="pf-gallery">
+        <div class="pf-gallery__stage">
+          <img class="pf-gallery__img active" src="/img/news-list-home.png" alt="Screenshot of News List app home">
+          <img class="pf-gallery__img" src="/img/news-list-architecture.png" alt="Architecture diagram of the News List app">
+          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
+          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
+        </div>
+        <div class="pf-gallery__dots" aria-hidden="true"></div>
+      </div>
+
+      <div class="pf-entry__text">
+        <p>I created this simple Flask app at my job at The Wire China to help
+        curate their <a href="https://www.thewirechina.com/category/news-feed/" target="_blank" rel="noopener">Daily News Roundup</a> 
+        feature. I curated articles completely by hand when we first launched 
+        the feature, and that slow process motivated me to develop this app. Editors use 
+        their discretion as to which articles are actually included in the published roundup 
+        (including adding articles not surfaced by the app) — the app 
+        simply speeds up aggregating articles from the major news sources we kept up with.</p>
+        <p>It is an app meant to be used internally and thus had minimal styling. 
+        I cannot link the code, as the code is owned by the company. I had Claude make
+         an architecture diagram about how the app worked.</p>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="pf-entry">
+    <header class="pf-entry__header">
+      <h2 class="pf-entry__title">China's Investments in Israel | The Wire China</h2>
+      <span class="pf-entry__date">2020</span>
+    </header>
+
+    <div class="pf-entry__body">
+      <div class="pf-gallery">
+        <div class="pf-gallery__stage">
+          <img class="pf-gallery__img active" src="https://www.thewirechina.com/wp-content/uploads/2020/10/Foreign-Direct-Investment-Final-1200x1237.png" alt="Bar chart of Chinese foreign direct investment in Israel">
+          <img class="pf-gallery__img" src="https://www.thewirechina.com/wp-content/uploads/2020/10/chinaisraelmap_HR.png" alt="Map of China-backed projects in Israel">
+          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
+          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
+        </div>
+        <div class="pf-gallery__dots" aria-hidden="true"></div>
+      </div>
+
+      <div class="pf-entry__text">
+        <p>Infographic article on China's increasing investments in Israel. For this article, I worked with a graphic designer, 
+        who created the map of China-backed projects in Israel based off the data I sent him. I created the other two 
+        graphics (the bar chart and the HTML table) myself. I created basic HTML elements 
+        to help illustrate a number of my articles in The Wire China.</p> 
+        <p><a href="https://www.thewirechina.com/2020/10/11/chinas-investments-in-israel/" target="_blank" rel="noopener">See more graphics and read the article →</a></p>
+      </div>
+    </div>
+  </article>
+
+  <article class="pf-entry">
+    <header class="pf-entry__header">
+      <h2 class="pf-entry__title">In China's Orbit | The Wire China</h2>
+      <span class="pf-entry__date">2020</span>
+    </header>
+
+    <div class="pf-entry__body">
+      <div class="pf-gallery">
+        <div class="pf-gallery__stage">
+          <img class="pf-gallery__img active" src="https://www.thewirechina.com/wp-content/uploads/2020/08/Countries-Operating-the-Most-Satellites-1200x767.png" alt="Which countries have the most satellites">
+          <img class="pf-gallery__img" src="https://www.thewirechina.com/wp-content/uploads/2020/08/Satellites-by-Year.png" alt="Chart of satellites launched per year by country">
+          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
+          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
+        </div>
+        <div class="pf-gallery__dots" aria-hidden="true"></div>
+      </div>
+
+      <div class="pf-entry__text">
+        <p>Infographic article on the rapid growth of China's satellite fleet, the role 
+        of military-civil fusion in the satellite industry, and the major Chinese satellite 
+        manufacturers and operators. I created the charts in Adobe illustrator and wrote 
+        the HTML table.</p>
+        <p><a href="https://www.thewirechina.com/2020/08/23/in-the-sky-a-growing-crowd/" target="_blank" rel="noopener">See more graphics and read the article →</a></p>
+      </div>
+    </div>
+  </article>
+
+  <article class="pf-entry">
+    <header class="pf-entry__header">
+      <h2 class="pf-entry__title">Ant Group's Colony | The Wire China</h2>
+      <span class="pf-entry__date">2020</span>
+    </header>
+
+    <div class="pf-entry__body">
+      <div class="pf-gallery">
+        <div class="pf-gallery__stage">
+          <img class="pf-gallery__img active" src="https://www.thewirechina.com/wp-content/uploads/2020/09/Ant-and-Payments-Companies-1200x709.png" alt="Ant vs top payments companies">
+          <img class="pf-gallery__img" src="https://www.thewirechina.com/wp-content/uploads/2020/09/ant-colony-0219-02.png" alt="Graphic showing Ant Group's ownership structure">
+          <img class="pf-gallery__img" src="https://www.thewirechina.com/wp-content/uploads/2020/09/Shanghai-Qihong-people.png" alt="Photo of people at Shanghai Qihong">
+          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
+          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
+        </div>
+        <div class="pf-gallery__dots" aria-hidden="true"></div>
+      </div>
+
+      <div class="pf-entry__text">
+        <p>Infographic article examining Ant Group ahead of its 2020 IPO. The article 
+        looks at who controls Ant Group, how their business compares to similar companies, 
+        and who is invested in it. For this article, I worked with a graphic designer 
+        to create graphics from the data and information I researched.</p>
+        <p><a href="https://www.thewirechina.com/2020/09/06/ant-groups-colony/" target="_blank" rel="noopener">See more graphics and read the article →</a></p>
+      </div>
+    </div>
+  </article>
+
+  {# ── Add more entries above this comment ── #}
+
+</div>
+
+{# ── Lightbox overlay ── #}
+<div class="pf-lightbox" id="pf-lightbox" aria-modal="true" role="dialog" aria-label="Image lightbox" hidden>
+  <button class="pf-lightbox__close" aria-label="Close lightbox">&#x2715;</button>
+  <button class="pf-lightbox__prev" aria-label="Previous image">&#8592;</button>
+  <img class="pf-lightbox__img" src="" alt="">
+  <button class="pf-lightbox__next" aria-label="Next image">&#8594;</button>
+</div>
+
+<script>
+(function () {
+  /* ── Gallery widget ── */
+  document.querySelectorAll('.pf-gallery').forEach(function (gallery) {
+    var stage   = gallery.querySelector('.pf-gallery__stage');
+    var imgs    = Array.from(gallery.querySelectorAll('.pf-gallery__img'));
+    var dotsEl  = gallery.querySelector('.pf-gallery__dots');
+    var prevBtn = gallery.querySelector('.pf-gallery__btn--prev');
+    var nextBtn = gallery.querySelector('.pf-gallery__btn--next');
+    var current = 0;
+
+    if (imgs.length < 2) return; // single image — nothing to wire
+
+    /* build dots */
+    imgs.forEach(function (_, i) {
+      var dot = document.createElement('button');
+      dot.className = 'pf-gallery__dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Image ' + (i + 1));
+      dot.addEventListener('click', function () { go(i); });
+      dotsEl.appendChild(dot);
+    });
+
+    function go(n) {
+      imgs[current].classList.remove('active');
+      dotsEl.children[current].classList.remove('active');
+      current = (n + imgs.length) % imgs.length;
+      imgs[current].classList.add('active');
+      dotsEl.children[current].classList.add('active');
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function (e) { e.stopPropagation(); go(current - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function (e) { e.stopPropagation(); go(current + 1); });
+
+  });
+
+  /* ── Lightbox ── */
+  var lightbox   = document.getElementById('pf-lightbox');
+  var lbImg      = lightbox.querySelector('.pf-lightbox__img');
+  var lbPrev     = lightbox.querySelector('.pf-lightbox__prev');
+  var lbNext     = lightbox.querySelector('.pf-lightbox__next');
+  var lbClose    = lightbox.querySelector('.pf-lightbox__close');
+  var lbImages   = [];
+  var lbCurrent  = 0;
+
+  function openLightbox(imgs, startIndex) {
+    lbImages  = imgs;
+    lbCurrent = startIndex;
+    lbImg.src = imgs[startIndex].src;
+    lbImg.alt = imgs[startIndex].alt;
+    lbPrev.style.display = imgs.length > 1 ? '' : 'none';
+    lbNext.style.display = imgs.length > 1 ? '' : 'none';
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+    lightbox.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    document.body.style.overflow = '';
+    lbImages  = [];
+    lbCurrent = 0;
+  }
+
+  function lbGo(n) {
+    lbCurrent = (n + lbImages.length) % lbImages.length;
+    lbImg.src = lbImages[lbCurrent].src;
+    lbImg.alt = lbImages[lbCurrent].alt;
+  }
+
+  /* wire each gallery's stage to open lightbox on the active image */
+  document.querySelectorAll('.pf-gallery').forEach(function (gallery) {
+    var stage = gallery.querySelector('.pf-gallery__stage');
+    var imgs  = Array.from(gallery.querySelectorAll('.pf-gallery__img'));
+    stage.style.cursor = 'zoom-in';
+    stage.addEventListener('click', function (e) {
+      /* ignore clicks on the prev/next buttons */
+      if (e.target.closest('.pf-gallery__btn')) return;
+      var activeIndex = imgs.findIndex(function (img) { return img.classList.contains('active'); });
+      openLightbox(imgs, activeIndex);
+    });
+  });
+
+  lbClose.addEventListener('click', closeLightbox);
+  lbPrev.addEventListener('click',  function () { lbGo(lbCurrent - 1); });
+  lbNext.addEventListener('click',  function () { lbGo(lbCurrent + 1); });
+
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (lightbox.hidden) return;
+    if (e.key === 'Escape')     closeLightbox();
+    if (e.key === 'ArrowLeft')  lbGo(lbCurrent - 1);
+    if (e.key === 'ArrowRight') lbGo(lbCurrent + 1);
+  });
+})();
+</script>
