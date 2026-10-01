@@ -4,7 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} — {% endif %}Emma Bingham</title>
-  <meta name="description" content="{{ description or 'Emma Bingham — writer, editor, and scientist.' }}">
+  {%- set pageTitle %}{% if title %}{{ title }} — {% endif %}Emma Bingham{% endset %}
+  {%- set pageDesc = description or 'Emma Bingham — writer, editor, and scientist.' %}
+  <meta name="description" content="{{ pageDesc }}">
+  <link rel="canonical" href="{{ site.siteUrl }}{{ page.url }}">
+  {# Link previews (Slack, LinkedIn, iMessage, etc.) #}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Emma Bingham">
+  <meta property="og:title" content="{{ pageTitle | trim }}">
+  <meta property="og:description" content="{{ pageDesc }}">
+  <meta property="og:url" content="{{ site.siteUrl }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.siteUrl }}/img/emma.jpeg">
+  <meta property="og:image:alt" content="Emma Bingham">
+  <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;500;600&family=Jost:ital,wght@0,300..500;1,300..500&display=swap">
@@ -33,6 +45,7 @@
     <div class="site-footer__inner">
       <span class="site-footer__copy">© {{ page.date | year }} Emma Bingham</span>
       <ul class="site-footer__links">
+        <li><a href="mailto:emma@emmapbingham.com">Email</a></li>
         <li><a href="https://substack.com/@emmapbingham" target="_blank" rel="noopener">Substack</a></li>
         <li><a href="https://www.linkedin.com/in/emmapbingham/" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
