@@ -3,6 +3,7 @@ layout: base
 title: Portfolio
 description: Portfolio by Emma Bingham
 noindex: true
+wide: true
 ---
 
 <div class="portfolio-header">
@@ -17,15 +18,9 @@ noindex: true
   {# ─────────────────────────────────────────────────────────────────
      ENTRY TEMPLATE — copy this block and fill in your own content.
 
-     For a single image:
-       Remove all <button> elements and the second <img> tags.
-       Keep only one <img class="pf-gallery__img active"> in the list.
-
-     For multiple images:
-       Each <img class="pf-gallery__img"> after the first needs no "active".
-       Add a <button class="pf-gallery__btn pf-gallery__btn--prev">&#8592;</button>
-       and   <button class="pf-gallery__btn pf-gallery__btn--next">&#8594;</button>
-       inside .pf-gallery__stage, which the JS below wires up automatically.
+     Put one or more <img class="pf-gallery__img"> inside .pf-gallery__stage.
+     Give the first one the "active" class. With two or more images,
+     /js/gallery.js adds the ← 1 / n → controls below automatically.
   ──────────────────────────────────────────────────────────────── #}
 
   <article class="pf-entry">
@@ -37,9 +32,9 @@ noindex: true
     <div class="pf-entry__body">
       <div class="pf-gallery">
         <div class="pf-gallery__stage">
-          <img class="pf-gallery__img active" src="/img/ACU_legislative_bench_viz.png" alt="ACU legislative bench viz">
+          <img class="pf-gallery__img active" src="/img/gain-challenge-db.png" alt="Diagram: Claude skills turn raw files into one queryable SQLite database, checked by a person">
+          <img class="pf-gallery__img" src="/img/gain-challenge-skills.png" alt="Diagram: Claude skills sweep for screens, fish for leads, and track investigations while the editor decides what to pursue">
         </div>
-        <div class="pf-gallery__dots" aria-hidden="true"></div>
       </div>
 
       <div class="pf-entry__text">
@@ -49,9 +44,7 @@ noindex: true
         a dataset of Congressional lobbying records and member press releases. We built an 
         'agentic data newsroom' for surfacing stories from the dataset: 
         a bundle of agent skills for Claude that designs queries,
-        surfaces leads, and tracks investigations over a SQLite DB. 
-        (The image shows part of a D3 visualization we made during the 
-        investigation.)</p>
+        surfaces leads, and tracks investigations over a SQLite DB.</p>
         <p>
         Check out our skills and findings <a href="https://github.com/emmapbingham/agentic-newsroom">in our GitHub repo</a>, 
         and <a href="https://emmapbingham.substack.com/p/machine-bites-dog-building-a-virtual">read a writeup of the project</a>.</p>
@@ -72,10 +65,7 @@ noindex: true
           <img class="pf-gallery__img" src="/img/recipe-app-import.png" alt="Recipe app import screenshot">
           <img class="pf-gallery__img" src="/img/recipe-app-timeline.png" alt="Recipe app timeline screenshot">
           <img class="pf-gallery__img" src="/img/recipe-app-navigator.png" alt="Recipe app navigator screenshot">
-          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
-          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
         </div>
-        <div class="pf-gallery__dots" aria-hidden="true"></div>
       </div>
 
       <div class="pf-entry__text">
@@ -102,10 +92,7 @@ noindex: true
         <div class="pf-gallery__stage">
           <img class="pf-gallery__img active" src="/img/rosen-site-home.png" alt="Screenshot of rosenlife.org homepage">
           <img class="pf-gallery__img" src="/img/rosen-site-collection.png" alt="Screenshot of rosenlife.org collections page">
-          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
-          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
         </div>
-        <div class="pf-gallery__dots" aria-hidden="true"></div>
       </div>
 
       <div class="pf-entry__text">
@@ -133,7 +120,6 @@ noindex: true
         <div class="pf-gallery__stage">
           <img class="pf-gallery__img active" src="/img/nonadaptive.jpg" alt="Chart showing simulation results">
         </div>
-        <div class="pf-gallery__dots" aria-hidden="true"></div>
       </div>
 
       <div class="pf-entry__text">
@@ -160,10 +146,7 @@ noindex: true
         <div class="pf-gallery__stage">
           <img class="pf-gallery__img active" src="/img/news-list-home.png" alt="Screenshot of News List app home">
           <img class="pf-gallery__img" src="/img/news-list-architecture.png" alt="Architecture diagram of the News List app">
-          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
-          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
         </div>
-        <div class="pf-gallery__dots" aria-hidden="true"></div>
       </div>
 
       <div class="pf-entry__text">
@@ -193,10 +176,7 @@ noindex: true
         <div class="pf-gallery__stage">
           <img class="pf-gallery__img active" src="https://www.thewirechina.com/wp-content/uploads/2020/10/Foreign-Direct-Investment-Final-1200x1237.png" alt="Bar chart of Chinese foreign direct investment in Israel">
           <img class="pf-gallery__img" src="https://www.thewirechina.com/wp-content/uploads/2020/10/chinaisraelmap_HR.png" alt="Map of China-backed projects in Israel">
-          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
-          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
         </div>
-        <div class="pf-gallery__dots" aria-hidden="true"></div>
       </div>
 
       <div class="pf-entry__text">
@@ -220,10 +200,7 @@ noindex: true
         <div class="pf-gallery__stage">
           <img class="pf-gallery__img active" src="https://www.thewirechina.com/wp-content/uploads/2020/08/Countries-Operating-the-Most-Satellites-1200x767.png" alt="Which countries have the most satellites">
           <img class="pf-gallery__img" src="https://www.thewirechina.com/wp-content/uploads/2020/08/Satellites-by-Year.png" alt="Chart of satellites launched per year by country">
-          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
-          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
         </div>
-        <div class="pf-gallery__dots" aria-hidden="true"></div>
       </div>
 
       <div class="pf-entry__text">
@@ -248,10 +225,7 @@ noindex: true
           <img class="pf-gallery__img active" src="https://www.thewirechina.com/wp-content/uploads/2020/09/Ant-and-Payments-Companies-1200x709.png" alt="Ant vs top payments companies">
           <img class="pf-gallery__img" src="https://www.thewirechina.com/wp-content/uploads/2020/09/ant-colony-0219-02.png" alt="Graphic showing Ant Group's ownership structure">
           <img class="pf-gallery__img" src="https://www.thewirechina.com/wp-content/uploads/2020/09/Shanghai-Qihong-people.png" alt="Photo of people at Shanghai Qihong">
-          <button class="pf-gallery__btn pf-gallery__btn--prev" aria-label="Previous image">&#8592;</button>
-          <button class="pf-gallery__btn pf-gallery__btn--next" aria-label="Next image">&#8594;</button>
         </div>
-        <div class="pf-gallery__dots" aria-hidden="true"></div>
       </div>
 
       <div class="pf-entry__text">
@@ -268,109 +242,4 @@ noindex: true
 
 </div>
 
-{# ── Lightbox overlay ── #}
-<div class="pf-lightbox" id="pf-lightbox" aria-modal="true" role="dialog" aria-label="Image lightbox" hidden>
-  <button class="pf-lightbox__close" aria-label="Close lightbox">&#x2715;</button>
-  <button class="pf-lightbox__prev" aria-label="Previous image">&#8592;</button>
-  <img class="pf-lightbox__img" src="" alt="">
-  <button class="pf-lightbox__next" aria-label="Next image">&#8594;</button>
-</div>
-
-<script>
-(function () {
-  /* ── Gallery widget ── */
-  document.querySelectorAll('.pf-gallery').forEach(function (gallery) {
-    var stage   = gallery.querySelector('.pf-gallery__stage');
-    var imgs    = Array.from(gallery.querySelectorAll('.pf-gallery__img'));
-    var dotsEl  = gallery.querySelector('.pf-gallery__dots');
-    var prevBtn = gallery.querySelector('.pf-gallery__btn--prev');
-    var nextBtn = gallery.querySelector('.pf-gallery__btn--next');
-    var current = 0;
-
-    if (imgs.length < 2) return; // single image — nothing to wire
-
-    /* build dots */
-    imgs.forEach(function (_, i) {
-      var dot = document.createElement('button');
-      dot.className = 'pf-gallery__dot' + (i === 0 ? ' active' : '');
-      dot.setAttribute('aria-label', 'Image ' + (i + 1));
-      dot.addEventListener('click', function () { go(i); });
-      dotsEl.appendChild(dot);
-    });
-
-    function go(n) {
-      imgs[current].classList.remove('active');
-      dotsEl.children[current].classList.remove('active');
-      current = (n + imgs.length) % imgs.length;
-      imgs[current].classList.add('active');
-      dotsEl.children[current].classList.add('active');
-    }
-
-    if (prevBtn) prevBtn.addEventListener('click', function (e) { e.stopPropagation(); go(current - 1); });
-    if (nextBtn) nextBtn.addEventListener('click', function (e) { e.stopPropagation(); go(current + 1); });
-
-  });
-
-  /* ── Lightbox ── */
-  var lightbox   = document.getElementById('pf-lightbox');
-  var lbImg      = lightbox.querySelector('.pf-lightbox__img');
-  var lbPrev     = lightbox.querySelector('.pf-lightbox__prev');
-  var lbNext     = lightbox.querySelector('.pf-lightbox__next');
-  var lbClose    = lightbox.querySelector('.pf-lightbox__close');
-  var lbImages   = [];
-  var lbCurrent  = 0;
-
-  function openLightbox(imgs, startIndex) {
-    lbImages  = imgs;
-    lbCurrent = startIndex;
-    lbImg.src = imgs[startIndex].src;
-    lbImg.alt = imgs[startIndex].alt;
-    lbPrev.style.display = imgs.length > 1 ? '' : 'none';
-    lbNext.style.display = imgs.length > 1 ? '' : 'none';
-    lightbox.hidden = false;
-    document.body.style.overflow = 'hidden';
-    lightbox.focus();
-  }
-
-  function closeLightbox() {
-    lightbox.hidden = true;
-    document.body.style.overflow = '';
-    lbImages  = [];
-    lbCurrent = 0;
-  }
-
-  function lbGo(n) {
-    lbCurrent = (n + lbImages.length) % lbImages.length;
-    lbImg.src = lbImages[lbCurrent].src;
-    lbImg.alt = lbImages[lbCurrent].alt;
-  }
-
-  /* wire each gallery's stage to open lightbox on the active image */
-  document.querySelectorAll('.pf-gallery').forEach(function (gallery) {
-    var stage = gallery.querySelector('.pf-gallery__stage');
-    var imgs  = Array.from(gallery.querySelectorAll('.pf-gallery__img'));
-    stage.style.cursor = 'zoom-in';
-    stage.addEventListener('click', function (e) {
-      /* ignore clicks on the prev/next buttons */
-      if (e.target.closest('.pf-gallery__btn')) return;
-      var activeIndex = imgs.findIndex(function (img) { return img.classList.contains('active'); });
-      openLightbox(imgs, activeIndex);
-    });
-  });
-
-  lbClose.addEventListener('click', closeLightbox);
-  lbPrev.addEventListener('click',  function () { lbGo(lbCurrent - 1); });
-  lbNext.addEventListener('click',  function () { lbGo(lbCurrent + 1); });
-
-  lightbox.addEventListener('click', function (e) {
-    if (e.target === lightbox) closeLightbox();
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (lightbox.hidden) return;
-    if (e.key === 'Escape')     closeLightbox();
-    if (e.key === 'ArrowLeft')  lbGo(lbCurrent - 1);
-    if (e.key === 'ArrowRight') lbGo(lbCurrent + 1);
-  });
-})();
-</script>
+{% include "lightbox.njk" %}

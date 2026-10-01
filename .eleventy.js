@@ -1,8 +1,10 @@
 module.exports = function(eleventyConfig) {
   // Copy CSS and assets
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/favicon.svg");
 
   eleventyConfig.addFilter("year", (date) => new Date(date).getFullYear());
 

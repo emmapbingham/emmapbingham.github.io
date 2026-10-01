@@ -1,0 +1,11 @@
+{# Image gallery used on the Projects page. Pass a list of {src, alt}.
+   Markup matches the Portfolio galleries; wired up by /js/gallery.js. #}
+{% macro gallery(images) %}
+<div class="pf-gallery">
+  <div class="pf-gallery__stage">
+    {%- for img in images %}
+    <img class="pf-gallery__img{% if loop.first %} active{% endif %}" src="{{ img.src }}" alt="{{ img.alt }}"{% if not loop.first %} loading="lazy"{% endif %}>
+    {%- endfor %}
+  </div>
+</div>
+{% endmacro %}
